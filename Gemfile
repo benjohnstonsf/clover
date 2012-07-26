@@ -26,12 +26,13 @@ end
 
 gem 'jquery-rails'
 
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
+group :production, :staging do
+  gem "pg"
   gem 'thin'
+end
+
+group :development, :test do
+  gem "sqlite3-ruby", :require => "sqlite3"
 end
 
 # To use ActiveModel has_secure_password
