@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem "haml", "~> 3.1.4" # markup haiku (http://haml-lang.com/)
 gem "haml-rails", "~> 0.3.4" # Haml-rails provides Haml generators for Rails 3.
 gem "sass", "~> 3.1.15" # Syntactically Awesome Stylesheets (http://sass-lang.com/)
+gem 'heroku'
 
 
 # Gems used only for assets and not required
@@ -24,6 +25,14 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
