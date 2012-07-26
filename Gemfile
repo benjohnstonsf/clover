@@ -5,7 +5,6 @@ gem 'rails', '3.2.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem "haml", "~> 3.1.4" # markup haiku (http://haml-lang.com/)
 gem "haml-rails", "~> 0.3.4" # Haml-rails provides Haml generators for Rails 3.
 gem "sass", "~> 3.1.15" # Syntactically Awesome Stylesheets (http://sass-lang.com/)
