@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en-US"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>WordPress Responsive Theme &#8211; View Full Site Layout Design | Just another WordPress site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <%= stylesheet_link_tag "default/style.css" %>
+  <%= stylesheet_link_tag "style.css" %>
+  <%= stylesheet_link_tag "custom.css" %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag "flexslider.css" %>
+  <%= stylesheet_link_tag "tipsy.css" %>
+  <%= stylesheet_link_tag "prettyPhoto.css" %>
+  <link rel="alternate" type="application/rss+xml" title="WordPress Responsive Theme - View Full Site Layout Design &raquo; Feed" href="http://view-full-site-wordpress-responsive-theme.wpstall.com/?feed=rss2" />
+  <link rel="alternate" type="application/rss+xml" title="WordPress Responsive Theme - View Full Site Layout Design &raquo; Comments Feed" href="http://view-full-site-wordpress-responsive-theme.wpstall.com/?feed=comments-rss2" />
+  <link rel="alternate" type="application/rss+xml" title="WordPress Responsive Theme - View Full Site Layout Design &raquo; Home Comments Feed" href="http://view-full-site-wordpress-responsive-theme.wpstall.com/?feed=rss2&#038;page_id=2" />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://view-full-site-wordpress-responsive-theme.wpstall.com/xmlrpc.php?rsd" />
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://view-full-site-wordpress-responsive-theme.wpstall.com/wp-includes/wlwmanifest.xml" />
+  <link rel='next' title='About' href='http://view-full-site-wordpress-responsive-theme.wpstall.com/?page_id=7' />
+
+  <%= javascript_include_tag "jquery-1.6.4.min.js" %>
+  <%= javascript_include_tag "jquery.tipsy.js" %>
+  <%= javascript_include_tag "css3-mediaqueries.js" %>
+  <%= javascript_include_tag "jquery.visualNav.min.js" %>
+  <%= javascript_include_tag "jquery.isotope.min.js" %>
+  <%= javascript_include_tag "jquery.prettyPhoto.js" %>
+  <%= javascript_include_tag "jquery.flexslider.js" %>
+  <%= javascript_include_tag "custom.js" %>
+  <!--[if lt IE 9]>
+  <%= javascript_include_tag "html5.js" %>
+  <![endif]-->
+
+</head>
+
+<body  class="home page page-id-2 page-template-default">
+<div id="page">
+  <%= render 'layouts/headers' %>
+  <%= yield %>
+
+
+</div>
+
+
+</body>
+</html>

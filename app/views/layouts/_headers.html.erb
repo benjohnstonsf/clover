@@ -1,0 +1,44 @@
+<aside id="header">
+  <h1 id="logo"><a href="http://view-full-site-wordpress-responsive-theme.wpstall.com/">WordPress Responsive Theme - View Full Site Layout Design</a></h1>
+  <nav id="main-nav">
+
+    <ul>
+      <li class="menu"><%= link_to "Home", root_path %></li>
+      <li class="menu"><%= link_to "About", "/about"%></li>
+      <li class="menu"><%= link_to "Services", "/services"%></li>
+      <li class="menu"><%= link_to "Works", "/works"%></li>
+      <li class="menu"><%= link_to "Gallery", "/gallery"%></li>
+      <li class="menu"><%= link_to "Contact", "/contact"%></li>
+      <li class="menu"><%= link_to "Blog", "/blog"%></li>
+    </ul>	</nav>
+
+  <div class="widget">
+    <ul class="social">
+      <li class="twitter"><a href="http://www.Twitter.com/username" class="tip" title="Twitter"><%= image_tag "icon_twitter.png" %></a></li>
+
+      <li class="facebook"><a href="http://www.Facebook.com/username" class="tip" title="Facebook"><%= image_tag "icon_facebook.png" %></a></li>
+
+      <li class="dribbble"><a href="http://www.Dribbble.com/username" class="tip" title="Dribbble"><%= image_tag "icon_dribbble.png" %></a></li>
+
+      <li class="skype"><a href="http://www.Skype.com/username" class="tip" title="Skype"><%= image_tag "icon_skype.png" %></a></li>
+
+      <li class="flickr"><a href="http://www.flickr.com/username" class="tip" title="Flickr"><%= image_tag "icon_flickr.png" %></a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <div class="view">
+      <h4>Viewing</h4>
+      <div class="view_holder"> <span class="monitor">&nbsp;</span> <span class="ipad">&nbsp;</span> <span class="iphone">&nbsp;</span> </div>
+    </div>
+  </div>
+
+</aside>
+<script>
+    $("#main-nav").find("a[href='"+window.location.pathname+"']").parent().addClass("current");
+</script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $('.flexslider').flexslider();
+    });
+</script>

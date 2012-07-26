@@ -1,0 +1,112 @@
+/*
+Theme Name: View - Full site version
+Theme URI: http://themeforest.net/user/wpstall/portfolio
+Description: View is a Responsive and an HTML5 based template. This is minimalist design and is best for personal and portfolio site. A lot of features like gallery, video, flex slider, and a many more. You may check the live preview to see the actual action.
+Author: WPSTALL
+Author URI: http://themeforest.net/user/wpstall
+License: GNU General Public License
+License URI: license.txt
+Version: | version 1.1
+*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+    display:block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin:0;
+    max-width: 98.5%;
+    padding:0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}
+
+.sticky {
+    border: 1px solid 0f0f0f;
+}
+
+.gallery-caption {}
+.bypostauthor  {}
+
+
+/*form*/
+/*
+:focus{ outline:none; }
+.form > div{ margin-bottom:20px; width:100%; position:relative;  }
+.form > div > label{ width:100px; float:left; margin-top:10px; }
+.form #name, .form #email, .form #subject, .form #message, .inputtext, .form select, #commentform textarea {padding:10px; border:1px solid #d9d9d9;  font-family: 'Open Sans', sans-serif; font-size:13px; }
+.form #name:focus, .form #email:focus, .form #subject:focus, .form #message:focus, .inputtext:focus, .form select:focus{border:1px solid #8a8a8a;}
+.form #name, .form #email, .form #subject, .form #message, .inputtext, .form select {  -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; border-radius:4px; background:none; }
+.form #name, .form #url, .form #email { margin-right:20px; width:23%; }
+.form #message{ width:97%; max-width:97%; max-height:10%; }
+*/

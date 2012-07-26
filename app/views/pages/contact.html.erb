@@ -1,0 +1,61 @@
+<section id="main">
+  <div id="page-17" class="content">
+    <div class="page_title">
+      <h2>Contact Us</h2>
+    </div>
+    <div id="map_canvas"><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=mo&amp;q=New+york+google+map&amp;gbv=2&amp;ie=UTF8&amp;hq=&amp;hnear=New+York,+United+States&amp;gl=md&amp;t=m&amp;z=10&amp;ll=40.714353,-74.005973&amp;output=embed"></iframe></div>
+    <p>Please use the form below to get in touch with us.</p>
+
+
+    <div id="message"></div>
+    <div id="note"></div>
+    <form action="http://view-full-site-wordpress-responsive-theme.wpstall.com/wp-content/themes/viewFullSite/functions/contact.php" method="post" class="form"  name="contactform" id="contactform">
+
+      <div class="clearfix">
+        <input type="text" name="name" id="name" value="Your Name" onblur="if (this.value == ''){this.value = 'Your Name'; }" onfocus="if (this.value == 'Your Name') {this.value = '';}">
+        <input type="text" name="email" id="email" value="Your Email" onblur="if (this.value == ''){this.value = 'Your Email'; }" onfocus="if (this.value == 'Your Email') {this.value = '';}">
+        <input type="text" name="subject" id="subject" value="Your Subject" class="inputtext" onblur="if (this.value == ''){this.value = 'Your Subject'; }" onfocus="if (this.value == 'Your Subject') {this.value = '';}">
+      </div>
+      <div class="clearfix"><textarea rows="10" cols="10" name="message" id="message" onblur="if (this.value == ''){this.value = 'Your Message'; }" onfocus="if (this.value == 'Your Message') {this.value = '';}">Your Message</textarea></div>
+      <div id="submit_button"><input type="submit" name="submit" id="submit" value="Send Message &rarr;"></div>
+    </form>
+
+    <script type="text/javascript">
+        /*ajax form*/
+        jQuery("#contactform").submit(function(){
+            $("#submit").attr("disabled","disabled").after('<img src="http://view-full-site-wordpress-responsive-theme.wpstall.com/wp-content/themes/viewFullSite/css/default/images/ajax-loader.gif" class="loader" />');
+            var str = jQuery(this).serialize();
+
+            jQuery("#note").hide('slow');
+
+            jQuery.ajax({
+                type: "POST",
+                url: "http://view-full-site-wordpress-responsive-theme.wpstall.com/wp-content/themes/viewFullSite/functions/contact.php",
+                data: str,
+                success: function(msg){
+                    jQuery("#note").ajaxComplete(function(event, request, settings){
+                        if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
+                        {
+                            result = '<div class="notification_ok" style="margin:20px 0;"><h3>Your message has been submitted to us. Thank you.</h3></div>';
+                            jQuery("#contactform").hide('slow');
+                        } else {
+                            result = msg;
+                        }
+
+                        jQuery(this).html(result);
+                        jQuery(this).slideDown('slow');
+
+                        $("#contactform img.loader").fadeOut("fast",function(){$(this).remove()});
+                        $("#submit").removeAttr("disabled");
+                    });
+                }
+            });
+            return false;
+        });
+    </script>
+
+  </div>
+
+  <div class="copyright">All Rights Reserved © 2012</div>
+
+</section>
